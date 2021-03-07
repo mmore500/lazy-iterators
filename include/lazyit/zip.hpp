@@ -1,8 +1,11 @@
+#pragma once
+#ifndef INCLUDED_ZIP
+#define INCLUDED_ZIP
+
 /*
  * Chris Welshman 2014
  */
-#ifndef INCLUDED_ZIP
-#define INCLUDED_ZIP
+
 #include <utility>
 #include <iterator>
 #include <algorithm>

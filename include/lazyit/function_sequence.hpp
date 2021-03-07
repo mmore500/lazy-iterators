@@ -1,5 +1,11 @@
+#pragma once
 #ifndef INCLUDED_FUNCTION_SEQUENCE
 #define INCLUDED_FUNCTION_SEQUENCE
+
+/*
+ * Chris Welshman 2014
+ */
+
 #include <iterator>
 #include <utility>
 #include <type_traits>

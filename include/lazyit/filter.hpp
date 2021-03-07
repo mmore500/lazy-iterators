@@ -1,8 +1,11 @@
+#pragma once
+#ifndef INCLUDED_FILTER
+#define INCLUDED_FILTER
+
 /*
  * Chris Welshman 2014
  */
-#ifndef INCLUDED_FILTER
-#define INCLUDED_FILTER
+
 #include <iterator>
 #include <utility>
 

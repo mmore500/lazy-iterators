@@ -1,8 +1,11 @@
+#pragma once
+#ifndef INCLUDED_MAP
+#define INCLUDED_MAP
+
 /*
  * Chris Welshman 2014
  */
-#ifndef INCLUDED_MAP
-#define INCLUDED_MAP
+
 #include <iterator>
 #include <utility>
 #include <type_traits>

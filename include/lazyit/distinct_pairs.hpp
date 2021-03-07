@@ -1,8 +1,11 @@
+#pragma once
+#ifndef INCLUDED_DISTINCT_PAIRS
+#define INCLUDED_DISTINCT_PAIRS
+
 /*
  * Chris Welshman 2014
  */
-#ifndef INCLUDED_DISTINCT_PAIRS
-#define INCLUDED_DISTINCT_PAIRS
+
 #include <iterator>
 #include <utility>
 

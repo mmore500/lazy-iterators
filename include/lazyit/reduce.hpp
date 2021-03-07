@@ -1,8 +1,11 @@
+#pragma once
+#ifndef INCLUDED_REDUCE
+#define INCLUDED_REDUCE
+
 /*
  * Chris Welshman 2014
  */
-#ifndef INCLUDED_REDUCE
-#define INCLUDED_REDUCE
+
 #include <iterator>
 #include <type_traits>
 

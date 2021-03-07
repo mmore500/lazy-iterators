@@ -1,8 +1,11 @@
+#pragma once
+#ifndef INCLUDED_PRODUCT
+#define INCLUDED_PRODUCT
+
 /*
  * Chris Welshman 2014
  */
-#ifndef INCLUDED_PRODUCT
-#define INCLUDED_PRODUCT
+
 #include <type_traits>
 #include <utility>
 #include <iterator>

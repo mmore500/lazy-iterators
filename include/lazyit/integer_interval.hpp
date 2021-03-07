@@ -1,8 +1,11 @@
+#pragma once
+#ifndef INCLUDED_INTEGER_INTERVAL
+#define INCLUDED_INTEGER_INTERVAL
+
 /*
  * Chris Welshman 2014
  */
-#ifndef INCLUDED_INTEGER_INTERVAL
-#define INCLUDED_INTEGER_INTERVAL
+
 #include <type_traits>
 #include <utility>
 #include <iterator>

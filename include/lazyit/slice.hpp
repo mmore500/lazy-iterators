@@ -1,8 +1,11 @@
+#pragma once
+#ifndef INCLUDED_SLICE
+#define INCLUDED_SLICE
+
 /*
  * Chris Welshman 2014
  */
-#ifndef INCLUDED_SLICE
-#define INCLUDED_SLICE
+
 #include <iterator>
 #include <stdint.h>
 
