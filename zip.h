@@ -18,7 +18,7 @@ struct zip_iterator {
 	typedef typename std::iterator_traits<It2>::reference         reference_2;
 	typedef typename std::iterator_traits<It2>::difference_type   difference_type_2;
 	typedef typename std::iterator_traits<It2>::iterator_category iterator_category_2;
-		
+
 	typedef std::pair<value_type_1,value_type_2> value_type;
 	typedef std::pair<reference_1,reference_2>   reference;
 	typedef std::pair<It1,It2>                   pair_type;
@@ -36,7 +36,7 @@ struct zip_iterator {
 	reference operator*() const {
 		return reference( *pair.first, *pair.second );
 	}
-	
+
 	pointer operator->() const {
 		return &pair;
 	}
@@ -126,7 +126,7 @@ struct zip_iterator {
 	}
 
 protected:
-	pair_type pair; 
+	pair_type pair;
 };
 
 template<typename It1,typename It2>
@@ -146,9 +146,9 @@ struct zip_range {
 	typedef std::pair<value_type_1,value_type_2> value_type;
 
 	explicit zip_range( const range_type& range ) : range(range) {}
-		
+
 	zip_range( const pair_type_1& range_1, const pair_type_2& range_2 ) : range(range_type(range_1,range_2)) {}
-		
+
 	difference_type size() const {
 		difference_type N1 = std::distance( range.first.first, range.first.second );
 		difference_type N2 = std::distance( range.second.first, range.second.second );

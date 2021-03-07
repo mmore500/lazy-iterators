@@ -22,7 +22,7 @@ struct integer_iterator {
 	value_type operator*() const {
 		return value;
 	}
-	
+
 	integer_iterator<T>& operator++() {
 		++value;
 		return *this;
@@ -111,7 +111,7 @@ struct integer_interval_range {
 	explicit integer_interval_range( range_type range ) : range(range) {}
 
 	integer_interval_range( T lower, T upper ) : range(lower,upper) {}
-	
+
 	difference_type size() const {
 		return difference_type(T(1) + range.second) - difference_type(range.first);
 	}

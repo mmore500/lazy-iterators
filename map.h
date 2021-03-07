@@ -24,13 +24,13 @@ struct map_iterator {
 	map_iterator( const F& f, const range_type& range, const Iterator& it ) : f(f), range(range), it(it) {}
 
 	map_iterator( const F& f, const Iterator& first, const Iterator& last ) : map_iterator(f,range_type(first,last)) {}
-	
+
 	map_iterator( const F& f, const Iterator& first, const Iterator& last, const Iterator& it ) : map_iterator(f,range_type(first,last),it) {}
-	
+
 	value_type operator*() const {
 		return f(*it);
 	}
-	
+
 	map_iterator<F,Iterator>& operator++() {
 		++it;
 		return *this;
@@ -125,9 +125,9 @@ struct map_range {
 	typedef std::pair<Iterator,Iterator>      range_type;
 
 	map_range( const F& f, const range_type& range ) : f(f), range(range) {}
-		
+
 	map_range( const F& f, const Iterator& first, const Iterator& last ) : map_range(f,range_type(first,last)) {}
-		
+
 	difference_type size() const {
 		return std::distance( range.first, range.second );
 	}

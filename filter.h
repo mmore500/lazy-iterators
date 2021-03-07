@@ -46,9 +46,9 @@ struct filter_iterator {
 	}
 
 	filter_iterator( const F& f, const Iterator& first, const Iterator& last ) : filter_iterator(f,range_type(first,last)) {}
-	
+
 	filter_iterator( const F& f, const Iterator& first, const Iterator& last, const Iterator& it ) : filter_iterator(f,range_type(first,last),it) {}
-	
+
 	reference operator*() const {
 		return *it;
 	}
@@ -171,9 +171,9 @@ struct filter_range {
 	typedef std::pair<Iterator,Iterator>         range_type;
 
 	filter_range( const F& f, const range_type& range ) : f(f), range(range) {}
-		
+
 	filter_range( const F& f, const Iterator& first, const Iterator& last ) : map_range(f,range_type(first,last)) {}
-	
+
 	iterator begin() const {
 		return iterator( f, range );
 	}

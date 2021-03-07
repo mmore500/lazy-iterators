@@ -124,9 +124,9 @@ struct slice_range {
 		difference_type N = std::distance( range.first, range.second );
 		count = std::min( N - skip, count );
 	}
-	
+
 	slice_range( const range_type& range, difference_type skip, difference_type count ) : slice_range(range,skip,count,1) {}
-	
+
 	slice_range( const range_type& range, difference_type count ) : slice_range(range,0,count,1) {}
 
 	iterator begin() const {

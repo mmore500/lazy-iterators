@@ -83,7 +83,7 @@ for( auto f : fibonacci ) {
 	if( f > 1000 ) break;
 	cout << f << endl;
 }
- 
+
 /* Output:
 1
 1
@@ -108,7 +108,7 @@ for( auto f : fibonacci ) {
 
 ```cpp
 auto primes( int lower, int upper ) {
-	upper = max(upper,2); lower = min(max(lower,2),upper); 
+	upper = max(upper,2); lower = min(max(lower,2),upper);
 	return filter( integer_interval( lower, upper ),
 		[]( auto i ) {
 			auto tests = integer_interval( 2, max((int)sqrt(i),2) );
@@ -217,7 +217,7 @@ auto v = integer_interval( 1, 4 );
 for( auto p : distinct_pairs(distinct_pairs(v)) ) {
     cout << "( ( " << p.first.first << ", " << p.first.second << " ), ( " << p.second.first << ", " << p.second.second << " ) )" << endl;
 }
- 
+
 /* Output:
 ( ( 1, 2 ), ( 1, 3 ) )
 ( ( 1, 2 ), ( 1, 4 ) )
@@ -236,4 +236,3 @@ for( auto p : distinct_pairs(distinct_pairs(v)) ) {
 ( ( 2, 4 ), ( 3, 4 ) )
 */
 ```
-
