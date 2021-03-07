@@ -1,6 +1,6 @@
 #pragma once
-#ifndef INCLUDED_ZIP
-#define INCLUDED_ZIP
+#ifndef INCLUDED_LAZYIT_ZIP
+#define INCLUDED_LAZYIT_ZIP
 
 /*
  * Chris Welshman 2014
@@ -9,6 +9,8 @@
 #include <utility>
 #include <iterator>
 #include <algorithm>
+
+namespace lazyit {
 
 template<typename It1,typename It2>
 struct zip_iterator {
@@ -205,4 +207,6 @@ inline auto czip( const R1& r1, const R2& r2 ) {
 	);
 }
 
-#endif
+} // namespace lazyit
+
+#endif // #ifndef INCLUDED_LAZYIT_ZIP

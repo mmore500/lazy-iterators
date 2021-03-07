@@ -1,6 +1,6 @@
 #pragma once
-#ifndef INCLUDED_PRODUCT
-#define INCLUDED_PRODUCT
+#ifndef INCLUDED_LAZYIT_PRODUCT
+#define INCLUDED_LAZYIT_PRODUCT
 
 /*
  * Chris Welshman 2014
@@ -9,6 +9,8 @@
 #include <type_traits>
 #include <utility>
 #include <iterator>
+
+namespace lazyit {
 
 template<typename It1,typename It2>
 struct product_iterator {
@@ -259,4 +261,6 @@ inline auto cpairs( const Range& r ) {
 	return cproduct( r, r );
 }
 
-#endif
+} // namespace lazyit
+
+#endif // #ifndef INCLUDED_LAZYIT_PRODUCT

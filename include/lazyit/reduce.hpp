@@ -1,6 +1,6 @@
 #pragma once
-#ifndef INCLUDED_REDUCE
-#define INCLUDED_REDUCE
+#ifndef INCLUDED_LAZYIT_REDUCE
+#define INCLUDED_LAZYIT_REDUCE
 
 /*
  * Chris Welshman 2014
@@ -8,6 +8,8 @@
 
 #include <iterator>
 #include <type_traits>
+
+namespace lazyit {
 
 template<typename Range,typename F>
 inline auto reduce( Range&& c, F&& f ) {
@@ -63,4 +65,6 @@ inline auto creduce( const Range& c, T x, F&& f ) {
 	return x;
 }
 
-#endif
+} // namespace lazyit
+
+#endif // #ifndef INCLUDED_LAZYIT_REDUCE

@@ -1,6 +1,6 @@
 #pragma once
-#ifndef INCLUDED_INTEGER_INTERVAL
-#define INCLUDED_INTEGER_INTERVAL
+#ifndef INCLUDED_LAZYIT_INTEGER_INTERVAL
+#define INCLUDED_LAZYIT_INTEGER_INTERVAL
 
 /*
  * Chris Welshman 2014
@@ -9,6 +9,8 @@
 #include <type_traits>
 #include <utility>
 #include <iterator>
+
+namespace lazyit {
 
 template<typename T>
 struct integer_iterator {
@@ -144,4 +146,6 @@ inline auto integer_interval( T a, T b ) {
 	return integer_interval_range<T>( a, b );
 }
 
-#endif
+} // namespace lazyit
+
+#endif // #ifndef INCLUDED_LAZYIT_INTEGER_INTERVAL

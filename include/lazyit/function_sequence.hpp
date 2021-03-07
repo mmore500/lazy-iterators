@@ -1,6 +1,6 @@
 #pragma once
-#ifndef INCLUDED_FUNCTION_SEQUENCE
-#define INCLUDED_FUNCTION_SEQUENCE
+#ifndef INCLUDED_LAZYIT_FUNCTION_SEQUENCE
+#define INCLUDED_LAZYIT_FUNCTION_SEQUENCE
 
 /*
  * Chris Welshman 2014
@@ -9,6 +9,8 @@
 #include <iterator>
 #include <utility>
 #include <type_traits>
+
+namespace lazyit {
 
 template<typename F,typename State>
 struct function_sequence_iterator {
@@ -131,4 +133,6 @@ function_sequence_range<F,State> function_sequence( State&& initial, F&& f ) {
 	return function_sequence_range<F,State>( std::forward<F>(f), std::forward<State>(initial) );
 }
 
-#endif
+} // namespace lazyit
+
+#endif // #ifndef INCLUDED_LAZYIT_FUNCTION_SEQUENCE

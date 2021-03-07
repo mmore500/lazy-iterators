@@ -1,6 +1,6 @@
 #pragma once
-#ifndef INCLUDED_FILTER
-#define INCLUDED_FILTER
+#ifndef INCLUDED_LAZYIT_FILTER
+#define INCLUDED_LAZYIT_FILTER
 
 /*
  * Chris Welshman 2014
@@ -8,6 +8,8 @@
 
 #include <iterator>
 #include <utility>
+
+namespace lazyit {
 
 template<typename F,typename Iterator>
 struct filter_range;
@@ -220,4 +222,6 @@ inline auto cfilter( const Range& r, F&& f ) {
 	);
 }
 
-#endif
+} // namespace lazyit
+
+#endif // #ifndef INCLUDED_LAZYIT_FILTER

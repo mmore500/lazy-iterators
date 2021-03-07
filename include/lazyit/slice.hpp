@@ -1,6 +1,6 @@
 #pragma once
-#ifndef INCLUDED_SLICE
-#define INCLUDED_SLICE
+#ifndef INCLUDED_LAZYIT_SLICE
+#define INCLUDED_LAZYIT_SLICE
 
 /*
  * Chris Welshman 2014
@@ -8,6 +8,8 @@
 
 #include <iterator>
 #include <stdint.h>
+
+namespace lazyit {
 
 template<typename Iterator>
 struct step_iterator {
@@ -197,4 +199,6 @@ inline auto cslice( const Range& r, uint32_t count ) {
 	return slice( cbegin(r), cend(r), 0, count, 1 );
 }
 
-#endif
+} // namespace lazyit
+
+#endif // #ifndef INCLUDED_LAZYIT_SLICE

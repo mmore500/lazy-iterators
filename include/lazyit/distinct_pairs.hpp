@@ -1,6 +1,6 @@
 #pragma once
-#ifndef INCLUDED_DISTINCT_PAIRS
-#define INCLUDED_DISTINCT_PAIRS
+#ifndef INCLUDED_LAZYIT_DISTINCT_PAIRS
+#define INCLUDED_LAZYIT_DISTINCT_PAIRS
 
 /*
  * Chris Welshman 2014
@@ -8,6 +8,8 @@
 
 #include <iterator>
 #include <utility>
+
+namespace lazyit {
 
 template<typename Iterator>
 struct distinct_pairs_iterator {
@@ -242,4 +244,6 @@ inline auto cdistinct_pairs( const Range& r ) {
 	);
 }
 
-#endif
+} // namespace lazyit
+
+#endif // #ifndef INCLUDED_LAZYIT_DISTINCT_PAIRS

@@ -1,6 +1,6 @@
 #pragma once
-#ifndef INCLUDED_INVERTIBLE_FUNCTION_SEQUENCE
-#define INCLUDED_INVERTIBLE_FUNCTION_SEQUENCE
+#ifndef INCLUDED_LAZYIT_INVERTIBLE_FUNCTION_SEQUENCE
+#define INCLUDED_LAZYIT_INVERTIBLE_FUNCTION_SEQUENCE
 
 /*
  * Chris Welshman 2014
@@ -9,6 +9,8 @@
 #include <iterator>
 #include <utility>
 #include <type_traits>
+
+namespace lazyit {
 
 template<typename F,typename Finverse,typename State>
 struct invertible_function_sequence_iterator {
@@ -137,4 +139,6 @@ invertible_function_sequence_range<F,Finverse,State> invertible_function_sequenc
 	);
 }
 
-#endif
+} // namespace lazyit
+
+#endif // #ifndef INCLUDED_LAZYIT_INVERTIBLE_FUNCTION_SEQUENCE

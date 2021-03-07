@@ -1,6 +1,6 @@
 #pragma once
-#ifndef INCLUDED_MAP
-#define INCLUDED_MAP
+#ifndef INCLUDED_LAZYIT_MAP
+#define INCLUDED_LAZYIT_MAP
 
 /*
  * Chris Welshman 2014
@@ -9,6 +9,8 @@
 #include <iterator>
 #include <utility>
 #include <type_traits>
+
+namespace lazyit {
 
 template<typename F,typename Iterator>
 struct map_iterator {
@@ -176,4 +178,6 @@ inline auto cmap( const Range& r, F&& f ) {
 	);
 }
 
-#endif
+} // namespace lazyit
+
+#endif // #ifndef INCLUDED_LAZYIT_MAP
